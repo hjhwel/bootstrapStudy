@@ -1,0 +1,290 @@
+/********************通用样式************************/
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+
+#lk_aboutus,#lk_hot,#lk_link{
+    padding: 20px 0;
+}
+#lk_aboutus .title,#lk_hot .title,#lk_link .title{
+    display: flex;
+    /*轴向*/
+    flex-direction: column;
+    /*主轴居中*/
+    justify-content: center;
+    /*侧轴居中*/
+    align-items: center;
+    padding-bottom: 15px;
+}
+/********************通用样式************************/
+
+
+/****************
+       ****头部样式************************/
+#lk_header{
+
+}
+#lk_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #ececec;
+}
+
+#lk_header .top-bar .row>div{
+    border-right: 1px solid #ececec;
+}
+#lk_header .top-bar .row>div:last-child{
+    border: none;
+}
+
+#lk_header .top-bar .row .top-bar-1 a{
+    position: relative;
+}
+#lk_header .top-bar .row .top-bar-1 a img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -12px;
+    z-index: 9999;
+}
+
+#lk_header .top-bar .row .top-bar-1 a:hover img{
+    display: block;
+}
+
+.btn-register {
+    color: #FFFFFF;
+    background-color: #0AB4F7;
+    border-color: #FFFFFF;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #08DDF2;
+    border-color: #FFFFFF;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #0AB4F7;
+    border-color: #FFFFFF;
+}
+
+.btn-register .badge {
+    color: #0AB4F7;
+    background-color: #FFFFFF;
+}
+/*引入字体图标文件*/
+@font-face {
+    font-family: lk;
+    src: url("../fonts/lk.eot") format("embedded-opentype"),
+    url("../fonts/lk.svg") format("svg"),
+    url("../fonts/lk.ttf") format("truetype"),
+    url("../fonts/lk.woff") format("woff");
+}
+/*匹配到固定的类名 [class^="icon-"] 匹配前面类名  [class*=" icon-"] 匹配中间*/
+[class^="icon-"],[class*=" icon-"]{
+    font-family: lk;
+    font-style: normal;
+}
+/*将对应编码赋值*/
+.icon-phone::before{
+    content: "\e958";
+    font-size: 13px;
+}
+
+.icon-tel::before{
+    content: "\e942";
+    font-size: 13px;
+}
+
+#lk_header .navbar-lk{
+    background: #fff;
+    margin-bottom: 0;
+}
+#lk_header .navbar-lk .navbar-brand{
+    height: 70px;
+    padding: 10px 15px;
+}
+
+#lk_header .navbar-lk .navbar-nav a{
+    height: 70px;
+    line-height: 40px;
+}
+#lk_header .navbar-lk .navbar-nav li.active a,
+#lk_header .navbar-lk .navbar-nav a:hover{
+    background: transparent;
+    border-bottom: 2px solid #0AB4F7;
+}
+
+#lk_header .navbar-lk .navbar-toggle{
+    margin-top: 18px;
+}
+/********************头部样式************************/
+
+/********************轮播图************************/
+#lk_carousel{
+
+}
+
+#lk_carousel .item{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and ( min-width: 800px){
+    #lk_carousel .item{
+        height: 410px;
+    }
+}
+
+/********************轮播图************************/
+
+
+
+/********************关于我们************************/
+
+#lk_aboutus .container{
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+
+/********************关于我们************************/
+
+
+/********************产品特色************************/
+
+#lk_product{
+    background: #f0f0f0;
+    padding: 30px 0;
+}
+#lk_product .nav{
+    font-size: 18px;
+}
+#lk_product .nav a{
+    color:#999;
+}
+#lk_product .nav .active a{
+    color: #000;
+    background: #f0f0f0;
+    border: none;
+    border-bottom: 2px solid #0ab4f7;
+}
+#lk_product .tab-content{
+    padding-top: 25px;
+}
+#lk_product .pd-left{
+    padding: 40px 0;
+}
+#lk_product #pd_2{
+    margin-top: 25px;
+    padding-left: 0;
+    background-color: transparent;
+}
+#lk_product #pd_3{
+    margin: 30px 0;
+}
+/********************产品特色************************/
+
+
+/********************热门课程************************/
+
+#lk_hot .lesson{
+    padding: 15px 10px;
+}
+
+#lk_hot .media .media-left{
+    width: 20%;
+}
+#lk_hot .media .media-body{
+    width: 60%;
+    vertical-align: middle;
+}
+#lk_hot .media .media-right{
+    font-size: 14px;
+    padding-top: 15px;
+    vertical-align: middle;
+}
+
+/********************热门课程************************/
+
+
+/********************link************************/
+
+#lk_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+#lk_link ul li img{
+    height: 50px;
+}
+
+/********************link************************/
+
+
+
+/********************底部************************/
+
+#lk_footer{
+    background:url("../imgs/ft_bg.png") no-repeat center;
+    width: 100%;
+    height: 200px;
+    color: #ddd;
+    padding: 30px;
+}
+#lk_footer a{
+    color: #ddd;
+}
+#lk_footer a img{
+    margin-right: 20px;
+}
+#lk_footer ul li,#lk_footer h5{
+    list-style: none;
+    margin: 20px 0;
+}
+#lk_footer #lk_footer_center{
+    text-align: center;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    padding: 10px;
+    margin: 0 10px;
+}
+/********************底部************************/
+
+
+
+
+
+
+
+
+

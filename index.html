@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!-- 视口模式  name="viewport" 开启视口模式  width=device-width 设备宽度  initial-scale=1.0 初始化缩放比例为1-->
+    <!-- meta:vp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撩课学院</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 站点图标，也就是网页标题前的图标 快捷键 link:favaicon-->
+    <link rel="shortcut icon" href="imgs/lk_favicon.ico" type="image/x-icon">
+    <style>
+
+    </style>
+</head>
+<body>
+<!-- 头部 -->
+<header id="lk_header">
+    <div class="top-bar hidden-sm hidden-xs text-center text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-1 col-md-2">
+                    <a href="#" class="text-muted">
+                        <i class="icon-phone"></i>
+                        <span>关注公众号</span>
+                        <span class="caret"></span>
+                        <img src="imgs/ewm_xzh.jpg" alt="二维码" width="130">
+                    </a>
+                </div>
+                <div class="top-bar-2 col-md-5">
+                    <i class="icon-tel"></i>
+                    <span>8888-555-6666(服务时间：9:00-21:00)</span>
+                </div>
+                <div class="top-bar-3 col-md-2">
+                    <a href="#" class="text-muted">校企合作</a>
+                    <a href="#" class="text-muted">培训师</a>
+                </div>
+                <div class="top-bar-4 col-md-3">
+                    <a class="btn btn-default btn-sm  btn-register" href="#" role="button">免费注册</a>
+                    <a class="text-muted" href="#" role="button" style="margin-left: 10px" data-toggle="modal" data-target="#myModal">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 导航条-->
+
+    <nav class="navbar navbar-default navbar-static-top navbar-lk">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/lk_logo_sm.png" alt="logo" width="180">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="javascript:;" name="lk_aboutus">关于我们 </a></li>
+                        <li><a href="javascript:;" name="lk_product">产品特色</a></li>
+                        <li><a href="javascript:;" name="lk_hot">热门课程</a></li>
+                        <li><a href="javascript:;">名师授课</a></li>
+                        <li><a href="javascript:;">课堂互动</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                    </ul>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+</header>
+
+<!-- 头部 -->
+
+<!-- 轮播 -->
+<section id="lk_carousel" class="carousel slide" data-ride="carousel">
+    <!-- 指示器 -->
+    <ol class="carousel-indicators">
+        <li data-target="#lk_carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#lk_carousel" data-slide-to="1"></li>
+        <li data-target="#lk_carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- 滚动内容 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" data-lg-img="imgs/slide_01_2000x410.jpg" data-sm-img="imgs/slide_01_640x340.jpg">
+            <!--<img src="imgs/slide_01_2000x410.jpg" alt="01">-->
+
+        </div>
+        <div class="item" data-lg-img="imgs/slide_02_2000x410.jpg" data-sm-img="imgs/slide_02_640x340.jpg">
+            <!--<img src="imgs/slide_02_2000x410.jpg" alt="02">-->
+
+        </div>
+        <div class="item" data-lg-img="imgs/slide_03_2000x410.jpg" data-sm-img="imgs/slide_03_640x340.jpg">
+            <!--<img src="imgs/slide_03_2000x410.jpg" alt="03">-->
+
+        </div>
+    </div>
+
+    <!-- 左右控制 -->
+    <a class="left carousel-control" href="#lk_carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#lk_carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</section>
+<!-- 轮播 -->
+
+<!-- 关于我们 -->
+<section id="lk_aboutus" class="hidden-xs hidden-sm">
+    <div class="title text-center">
+        <h2><strong>关于我们</strong></h2>
+        <img src="imgs/star.png" alt="star" class="img-responsive">
+    </div>
+    <!-- 主要内容-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 text-muted">
+                <p>“撩课教育”是上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。
+                    “撩课教育”是上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。</p>
+                <p>上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，
+                    其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。
+                    其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。</p>
+                <p>秣码教育科技有限公司旗下的M2O高端IT教育品牌，其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。</p>
+            </div>
+            <div class="col-md-4">
+                <img src="imgs/team.png" alt="" class="img-responsive img-rounded">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 关于我们 -->
+
+<!-- 产品特色 -->
+<section id="lk_product">
+    <div class="container">
+        <div class="row">
+            <!-- 选项卡 -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#product1" aria-controls="home" role="tab" data-toggle="tab">在线大学</a></li>
+                <li role="presentation"><a href="#product2" aria-controls="profile" role="tab" data-toggle="tab">会员专享</a></li>
+                <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                <li role="presentation" class="pull-right hidden-sm hidden-xs"><a href="#" aria-controls="settings" role="tab" data-toggle="tab">更多</a></li>
+            </ul>
+
+            <!-- 展示内容 -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="product1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 pd-left">
+                                <div id="pd_1" class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="imgs/ewm_xzh.jpg" alt="ewm" width="140px">
+                                        </a>
+                                    </div>
+                                    <div class="media-body text-muted" style="padding-top: 100px">
+                                        <h5 class="media-heading">更多资讯</h5>
+                                        <h5 class="media-heading">更多内容</h5>
+                                    </div>
+                                </div>
+
+                                <ol id="pd_2" class="breadcrumb lead">
+                                    <li><a href="#">HTML5+全栈</a></li>
+                                    <li><a href="#">python+人工智能</a></li>
+                                    <li><a href="#">Go语言+区块链</a></li>
+                                    <li><a href="#">JavaEE</a></li>
+                                </ol>
+
+                                <h2 id="pd_3">
+                                    欢迎来到IT人的大学&nbsp;&nbsp;
+                                    <strong class="text-danger">撩课学院</strong>
+                                </h2>
+
+                                <p id="pd_4">
+                                    <button class="btn btn-default btn-lg btn-primary" type="submit">了解更多</button>
+                                    <button class="btn btn-default btn-lg" type="submit">课程资讯</button>
+                                </p>
+                            </div>
+                            <div class="col-md-4 hidden-xs hidden-sm">
+                                <img src="imgs/iphoneX.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 hidden-xs hidden-sm">
+                                <img src="imgs/iphoneX2.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-8 pd-left">
+                                <h2 class="text-warning">撩课学院会员</h2>
+                                <p class="text-muted lead">“撩课教育”是上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，其主要培训课程有H5+全栈、Python+人工智能
+                                    、Go+区块链、Java+大数据等前沿技术。 “撩课教育”是上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，
+                                    其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 pd-left">
+                                <h2 class="text-danger">撩课学院、撩课教育、秣码教育</h2>
+                                <p class="lead">10-15分钟视频讲解</p>
+                                <p class="text-muted lead">“撩课教育”是上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，其主要培训课程有H5+全栈、Python+人工智能
+                                    、Go+区块链、Java+大数据等前沿技术。 “撩课教育”是上海秣码教育科技有限公司旗下的M2O高端IT教育品牌，
+                                    其主要培训课程有H5+全栈、Python+人工智能、Go+区块链、Java+大数据等前沿技术。</p>
+                                <div class="badge">已经更新3000+视频，100000人订阅</div>
+                            </div>
+                            <div class="col-md-6 hidden-xs hidden-sm">
+                                <img src="imgs/macBook.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 产品特色 -->
+
+<!-- 热门课程 -->
+<section id="lk_hot">
+    <div class="title text-center">
+        <h2><strong>热门课程</strong></h2>
+        <img src="imgs/star.png" alt="star" class="img-responsive">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/lnj.png" alt="..."  width="100px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转Html5+跨平台
+                        </h4>
+                        <p class="text-muted">
+                            李南江老师带你从零基础入门前端 To Happly!
+
+                        </p>
+
+                    </div>
+                    <div class="media-right">
+                        <span class="text-danger">299课时</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/yjh.png" alt="..."  width="100px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转Html5+跨平台
+                        </h4>
+                        <p class="text-muted">
+                            李南江老师带你从零基础入门前端 To Happly!
+
+                        </p>
+
+                    </div>
+                    <div class="media-right">
+                        <span class="text-danger">299课时</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/wzs.png" alt="..."  width="100px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转Html5+跨平台
+                        </h4>
+                        <p class="text-muted">
+                            李南江老师带你从零基础入门前端 To Happly!
+
+                        </p>
+
+                    </div>
+                    <div class="media-right">
+                        <span class="text-danger">299课时</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/lnj.png" alt="..."  width="100px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转Html5+跨平台
+                        </h4>
+                        <p class="text-muted">
+                            李南江老师带你从零基础入门前端 To Happly!
+
+                        </p>
+
+                    </div>
+                    <div class="media-right">
+                        <span class="text-danger">299课时</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/yjh.png" alt="..."  width="100px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转Html5+跨平台
+                        </h4>
+                        <p class="text-muted">
+                            李南江老师带你从零基础入门前端 To Happly!
+
+                        </p>
+
+                    </div>
+                    <div class="media-right">
+                        <span class="text-danger">299课时</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/wzs.png" alt="..."  width="100px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <span class="text-danger">【热】</span>
+                            从零玩转Html5+跨平台
+                        </h4>
+                        <p class="text-muted">
+                            李南江老师带你从零基础入门前端 To Happly!
+
+                        </p>
+
+                    </div>
+                    <div class="media-right">
+                        <span class="text-danger">299课时</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 热门课程 -->
+
+<!-- 友情连接 -->
+<section id="lk_link" class="hidden-xs hidden-sm">
+    <div class="title text-center">
+        <h2><strong>友情连接</strong></h2>
+        <img src="imgs/star.png" alt="star" class="img-responsive">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><a href="#"><img src="imgs/ibm-logo.png" alt="" class="img-responsive"></a></li>
+                <li><a href="#"><img src="imgs/facebook-logo.png" alt="" class="img-responsive"></a></li>
+                <li><a href="#"><img src="imgs/google-logo.png" alt="" class="img-responsive"></a></li>
+                <li><a href="#"><img src="imgs/airbnb-logo.png" alt="" class="img-responsive"></a></li>
+                <li><a href="#"><img src="imgs/swift-logo.png" alt=""  class="img-responsive"></a></li>
+                <li><a href="#"><img src="imgs/paypal-logo.png" alt="" class="img-responsive"></a></li>
+                <li><a href="#"><img src="imgs/walmart-logo.png" alt="" class="img-responsive"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- 友情连接 -->
+
+<!-- 尾部 -->
+<footer id="lk_footer" class="hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+                    <div class="row">
+                        <ul class="col-md-6">
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">课程介绍</a></li>
+                            <li><a href="#">热门课程</a></li>
+                        </ul>
+                        <ul class="col-md-6">
+                            <li><a href="#">名师授课</a></li>
+                            <li><a href="#">课堂互动</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="col-md-3" id="lk_footer_center">
+                <h5>公司地址：江苏省开封市鼓楼街8888号</h5>
+                <h5>联系电话：121228888</h5>
+                <h5>邮箱地址：1291976513@qq.com</h5>
+            </div>
+            <div class="col-md-3">
+                <h5>联系我们：</h5>
+                <a href="#"><img src="imgs/weixin-h.png" alt="" width="50px" data-toggle="tooltip" data-placement="bottom" title="关注公众号"></a>
+                <a href="#"><img src="imgs/xinlang-h.png" alt="" width="50px" data-toggle="tooltip" data-placement="bottom" title="关注新浪微博"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- 尾部 -->
+
+<!--登陆-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body text-center">
+                <input type="text" placeholder="输入账号">
+                <p></p>
+                <input type="password" placeholder="输入密码">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消登陆</button>
+                <button type="button" class="btn btn-primary">确定登陆</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
